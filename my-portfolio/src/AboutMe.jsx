@@ -32,7 +32,7 @@ export default function AboutMe() {
                 AboutMe
             */}
                 <div className="p-3 ml-5">
-                    <h2 className="text-8xl text-center">
+                    <h2 id="about" className="text-8xl text-center">
                         Hello!
                     </h2>
                     <p>
@@ -93,7 +93,7 @@ export default function AboutMe() {
                 Contact
                 */}
             <div className="w-full lg:w-[33%] p-3">
-                <h2 className="text-8xl text-center">Contact</h2>
+                <h2 id="contact" className="text-8xl text-center">Contact</h2>
 
                 <div className="leading-9">
                     <a href="mailto:EthanGraneGarcia.Job@gmail.com?subject=Interested%20on%20your%20portfolio"
