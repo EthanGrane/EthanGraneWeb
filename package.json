@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://EthanGrane.github.io/EthanGraneWeb/",
+  "homepage": "https://www.ethangrane.com/",
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "framer-motion": "^12.23.16",

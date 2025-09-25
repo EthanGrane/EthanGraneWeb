@@ -11,28 +11,28 @@ export default function Projects() {
                 <h2 className="text-8xl text text-center lg:text-left mb-8">Projects</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-1">
                     <ProjectComponent 
-                    title="Shade It!: Post Processing Effects Collection (2025)"
-                    description="30+ stackable post-processing effects and a runtime API for total creative control."
-                    img="/ShadeitIcon.png"
+                    title="Infest It: Smart insect emitter! (2024)"
+                    description="Infest It brings your scenes to life with swarms of roaches, spiders, or rats, perfect for realistic horror scenes or sci-fi urban ambients!"
+                    img="./InfestitIcon.png"
                     />
 
                     <ProjectComponent 
                     title="Sound It!: Adaptive Audio Source (2025)"
                     description="Sound Shapes is an intuitive Unity tool for effortlessly creating immersive audio environments directly in your scenes."
-                    img="/SounditIcon.png"
+                    img="./SounditIcon.png"
                     />
 
                     <ProjectComponent 
                     title="Shade It!: Post Processing Effects Collection (2025)"
                     description="30+ stackable post-processing effects and a runtime API for total creative control."
-                    img="/ShadeitIcon.png"
+                    img="./ShadeitIcon.png"
                     />
 
-                    <ProjectComponent 
+                    {/* <ProjectComponent 
                     title="Shade It!: Post Processing Effects Collection (2025)"
                     description="30+ stackable post-processing effects and a runtime API for total creative control."
-                    img="/ShadeitIcon.png"
-                    />
+                    img="./ShadeitIcon.png"
+                    /> */}
                 </div>
             </div>
 
