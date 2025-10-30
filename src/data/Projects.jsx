@@ -1,4 +1,27 @@
+import { p } from "framer-motion/client"
+
 export const projects = [
+  {
+    video: "ClickerFactorio_Gameplay.webm",
+    icon: "",
+    title: "Factorio Clicker",
+    date: "2025-2025",
+    description: (
+      <>
+        <p>
+          This is a small game I made in a week. It's an automation and clicker game at the same time.
+          The gameplay loop consists of building mechanisms to get money, and to get upgrades you must complete achievements by clicking.
+        </p>
+        <br />
+        <p>
+          I created this project to continue improving my portfolio. 
+          I've written three articles on rendering techniques so other developers can recreate some mechanics or visual styles that aren't complex but are intricate.
+        </p>
+      </>
+
+    ),
+  gameplay_url: "https://www.youtube.com/embed/RlD0FcA5vko"
+  },
   {
     video: "SpyOnTheMobTown_Gameplay.webm",
     icon: "SpyOnTheMobTown_Logo.png",
@@ -61,5 +84,5 @@ export const projects = [
         </p>
       </>
     )
-  }
+  },
 ];

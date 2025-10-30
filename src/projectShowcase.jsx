@@ -1,9 +1,9 @@
 import { projects } from './data/Projects.jsx'
 
-export default function ProjecShowcase({ video, icon, title, date, description, gameplayUrl = "" }) {
+export default function ProjecShowcase({ video, icon, title, date, description, gameplay_url }) {
     return (
         <div>
-            <h2 id='projects' className="text-8xl text-center m-5">Projects List</h2>
+            <h2 id='projects' className="text-8xl text-center m-5 mt-5 pt-5">Projects List</h2>
 
             {projects.map((project, index) => (
                 <article>
@@ -19,11 +19,17 @@ export default function ProjecShowcase({ video, icon, title, date, description, 
                             style={{ filter: "brightness(0.5)" }}
                         />
 
-                        <img
-                            src={project.icon}
-                            alt="Logo"
-                            className="absolute top-0 left-0 right-0 bottom-0 m-auto p-9 max-w-full max-h-full object-contain"
-                        />
+                        {
+                            project.icon && (
+                                <img
+                                    src={project.icon}
+                                    alt="Logo"
+                                    className="absolute top-0 left-0 right-0 bottom-0 m-auto p-9 max-w-full max-h-full object-contain"
+                                />
+                            )
+                        }
+
+
                     </div>
 
 
@@ -39,11 +45,18 @@ export default function ProjecShowcase({ video, icon, title, date, description, 
                             </p>
                         </div>
 
-                        <div className="m-9 p-9 mt-3 w-[50%]">
-                            <div className="w-full aspect-video bg-black">
-
+                        <div className="m-9 p-9 mt-3 w-full md:w-1/2">
+                            <div className="relative w-full aspect-video">
+                                <iframe
+                                    src={project.gameplay_url}
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                    className="absolute top-0 left-0 w-full h-full rounded-xl"
+                                ></iframe>
                             </div>
                         </div>
+
                     </div>
                 </article>
             ))}
